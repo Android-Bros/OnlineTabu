@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">OnlineTabu</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="enter_room_password">Oda Şifresini Giriniz</string>
+    <string name="build_game">Oyunu Kur</string>
+    <string name="pass">Pas</string>
+    <string name="time">Süre</string>
+    <string name="max_point">Maksimum Puan</string>
+    <string name="email">E-mail</string>
+    <string name="send_email">Email Gönder</string>
+    <string name="tabu">Tabu</string>
+    <string name="first_team">1. Takım</string>
+    <string name="second_team">2. Takım</string>
+    <string name="correct_answer">Doğru Cevap</string>
+    <string name="wrong_answer">Yanlış Cevap</string>
+    <string name="game_info">Oyun Bilgisi</string>
+    <string name="join_game">Oyuna Katıl</string>
+    <string name="user_name">Kullanıcı Adı</string>
+    <string name="start_game">Oyunu Başlat</string>
+    <string name="password">Parola</string>
+    <string name="login">Giriş Yap</string>
+    <string name="forgot_password">Şifreni mi unuttun?</string>
+    <string name="forward">İleri</string>
+    <string name="finish_it">Bitir</string>
+    <string name="repeat_password">Parola Tekrar</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="play_again">Tekrar Oyna</string>
+    <string name="winner_team">Kazanan Takım!</string>
+    <string name="time_is_over">Süre Bitti</string>
+    <string name="continue_game">Devam Et</string>
+    <string name="finish_game">Oyunu Bitir</string>
+
 </resources>
