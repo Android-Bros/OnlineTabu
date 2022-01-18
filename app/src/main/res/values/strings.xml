@@ -29,4 +29,7 @@
     <string name="time_is_over">Süre Bitti</string>
     <string name="continue_game">Devam Et</string>
     <string name="finish_game">Oyunu Bitir</string>
+    <string name="how_to_play">Anlatıcı tabu kartlarından eline 5 adet kart alır. Anlatıcı kartları aldıktan sonra süresi başlamış olmaktadır. Bu arada karşı takımdan bir oyuncu yasaklı kelimeleri ve süreyi kontrol edebilmek için anlatıcının yanına gelmelidir. Oyunun amacı süre sonuna kadar olabildiğince kelime anlatabilmektir.</string>
+    <string name="how_to_play_title">Nasıl Oynanır?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
