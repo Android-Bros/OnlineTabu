@@ -20,18 +20,6 @@ class MainActivity : AppCompatActivity() {
 
         auth = Firebase.auth
 
-        binding.buttonLogin.setOnClickListener {
-            val email = binding.editTextEmail.text.toString()
-            val password = binding.editTextPassword.text.toString()
-
-            auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    Toast.makeText(this, "Giris Basarili", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Giris Basarisiz", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
     }
 
 }

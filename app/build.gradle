@@ -54,7 +54,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
 
-
     // lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
