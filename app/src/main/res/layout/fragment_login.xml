@@ -61,7 +61,7 @@
         android:layout_height="45dp"
         android:scaleType="fitCenter"
         android:layout_marginTop="@dimen/margin_small_big"
-        android:background="@drawable/google_button"
+        android:background="@drawable/google_logo"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
         app:layout_constraintStart_toStartOf="@+id/btn_login"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
