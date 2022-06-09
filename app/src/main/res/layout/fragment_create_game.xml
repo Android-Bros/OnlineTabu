@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.create_game.CreateGameFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEnterRoomPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/enter_room_password"
+        app:layout_constraintBottom_toTopOf="@+id/btnBuildGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMaxPoint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEnterRoomPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuildGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/on_boarding_button_shape"
+        android:text="@string/build_game"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <TextView
+        android:id="@+id/textViewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pass"
+        android:textSize="18sp"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <TextView
+        android:id="@+id/textViewMaxPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/allerta"
+        android:text="@string/max_point"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderTime" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/allerta"
+        android:text="@string/time"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderPass" />
+
+    <TextView
+        android:id="@+id/textViewPassCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        tools:text="4"
+        android:textSize="18sp"
+        android:fontFamily="@font/allerta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMaxPointCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/allerta"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderTime"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/textViewTimeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/allerta"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderPass"
+        tools:text="60 sn" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="5"
+        app:layout_constraintEnd_toEndOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPass" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stepSize="10"
+        android:valueFrom="0"
+        android:valueTo="120"
+        app:layout_constraintEnd_toEndOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMaxPoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stepSize="10"
+        android:valueFrom="0"
+        android:valueTo="50"
+        app:layout_constraintEnd_toEndOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tilEnterRoomPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxPoint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
