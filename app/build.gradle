@@ -59,6 +59,9 @@ dependencies {
     // lottie
     implementation "com.airbnb.android:lottie:$lottieVersion"
 
+    // slider
+    implementation "com.google.android.material:material:1.6.1"
+
     // test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
