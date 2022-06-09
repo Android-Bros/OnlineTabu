@@ -29,6 +29,7 @@ class PushNotificationService : FirebaseMessagingService() {
 
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
+
         if (message.data.isNotEmpty()) {
             Log.d(MESSAGE, "Message data payload: ${message.data}")
 
@@ -37,13 +38,11 @@ class PushNotificationService : FirebaseMessagingService() {
                 it.body?.let { message ->
                     sendNotification(message)
                 }
-
             }
         }
     }
 
     private fun sendNotification(message: String) {
-
         val intent = Intent(this, MainActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT)
@@ -64,8 +63,6 @@ class PushNotificationService : FirebaseMessagingService() {
             notificationManager.createNotificationChannel(channel)
         }
         notificationManager.notify(0, notificationBuilder.build())
-
     }
-
 
 }

@@ -1,7 +1,6 @@
 package com.androidbros.onlinetabu
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.androidbros.onlinetabu.databinding.ActivityMainBinding
 import com.google.firebase.analytics.FirebaseAnalytics
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         firebaseAnalytics = Firebase.analytics
         auth = Firebase.auth
-
     }
 
 }
