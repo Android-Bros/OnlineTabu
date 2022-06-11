@@ -34,9 +34,9 @@ class SplashFragment : Fragment() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             if (mySharedPref.loadOnBoardingState()) {
-                // findNavController().navigate(R.id.action_splashFragment_to_girisKayitFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_welcomeScreenFragment)
             } else {
-                findNavController().navigate(R.id.action_splashFragment_to_firstOnBoardingFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }
         }, SPLASH_SCREEN_TIME)
     }
