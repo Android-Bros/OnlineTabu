@@ -27,13 +27,13 @@
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnFirstOnBoardingForward"
+        app:layout_constraintBottom_toTopOf="@+id/btnThirdOnBoardingFinish"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimation" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFirstOnBoardingForward"
+        android:id="@+id/btnThirdOnBoardingFinish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
