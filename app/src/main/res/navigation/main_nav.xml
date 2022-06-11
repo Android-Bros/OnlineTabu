@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/firstOnBoardingFragment">
+
+    <fragment
+        android:id="@+id/firstOnBoardingFragment"
+        android:name="com.androidbros.onlinetabu.presentation.on_boarding.FirstOnBoardingFragment"
+        android:label="fragment_first_on_boarding"
+        tools:layout="@layout/fragment_first_on_boarding" >
+        <action
+            android:id="@+id/action_firstOnBoardingFragment_to_secondOnBoardingFragment"
+            app:destination="@id/secondOnBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondOnBoardingFragment"
+        android:name="com.androidbros.onlinetabu.presentation.on_boarding.SecondOnBoardingFragment"
+        android:label="fragment_second_on_boarding"
+        tools:layout="@layout/fragment_second_on_boarding" >
+        <action
+            android:id="@+id/action_secondOnBoardingFragment_to_thirdOnBoardingFragment"
+            app:destination="@id/thirdOnBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdOnBoardingFragment"
+        android:name="com.androidbros.onlinetabu.presentation.on_boarding.ThirdOnBoardingFragment"
+        android:label="fragment_third_on_boarding"
+        tools:layout="@layout/fragment_third_on_boarding" >
+        <action
+            android:id="@+id/action_thirdOnBoardingFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.androidbros.onlinetabu.presentation.welcome.WelcomeScreenFragment"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" />
+</navigation>
