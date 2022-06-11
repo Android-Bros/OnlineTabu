@@ -38,18 +38,18 @@
         android:text="@string/how_to_play_second_screen"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnFirstOnBoardingForward"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondOnBoardingForward"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvHowToTitle" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnFirstOnBoardingForward"
+        android:id="@+id/btnSecondOnBoardingForward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/on_boarding_button_shape"
-        android:text="@string/finish_it"
+        android:text="@string/forward"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
