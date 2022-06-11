@@ -36,5 +36,95 @@
         android:id="@+id/welcomeScreenFragment"
         android:name="com.androidbros.onlinetabu.presentation.welcome.WelcomeScreenFragment"
         android:label="fragment_welcome_screen"
-        tools:layout="@layout/fragment_welcome_screen" />
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.androidbros.onlinetabu.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_firstOnBoardingFragment"
+            app:destination="@id/firstOnBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.androidbros.onlinetabu.presentation.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFlowScreenFragment"
+            app:destination="@id/mainFlowScreenFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordScreenFragment2"
+            app:destination="@id/forgotPasswordScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordScreenFragment"
+        android:name="com.androidbros.onlinetabu.presentation.forgotpassword.ForgotPasswordScreenFragment"
+        android:label="fragment_forgor_password_screen"
+        tools:layout="@layout/fragment_forgor_password_screen" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.androidbros.onlinetabu.presentation.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_mainFlowScreenFragment"
+            app:destination="@id/mainFlowScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFlowScreenFragment"
+        android:name="com.androidbros.onlinetabu.presentation.mainflow.MainFlowScreenFragment"
+        android:label="fragment_main_flow_screen"
+        tools:layout="@layout/fragment_main_flow_screen" >
+        <action
+            android:id="@+id/action_mainFlowScreenFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_mainFlowScreenFragment_to_joinGameFragment"
+            app:destination="@id/joinGameFragment" />
+        <action
+            android:id="@+id/action_mainFlowScreenFragment_to_createGameFragment"
+            app:destination="@id/createGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.androidbros.onlinetabu.presentation.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/joinGameFragment"
+        android:name="com.androidbros.onlinetabu.presentation.join_game.JoinGameFragment"
+        android:label="fragment_join_game"
+        tools:layout="@layout/fragment_join_game" />
+    <fragment
+        android:id="@+id/createGameFragment"
+        android:name="com.androidbros.onlinetabu.presentation.create_game.CreateGameFragment"
+        android:label="fragment_create_game"
+        tools:layout="@layout/fragment_create_game" >
+        <action
+            android:id="@+id/action_createGameFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="com.androidbros.onlinetabu.presentation.lobby.LobbyFragment"
+        android:label="fragment_lobby"
+        tools:layout="@layout/fragment_lobby" >
+        <action
+            android:id="@+id/action_lobbyFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.androidbros.onlinetabu.presentation.game.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
 </navigation>
